@@ -14,7 +14,7 @@ if (empty($_SESSION['username'])) {
     header('Location: ' . DEFAULT_URL);
     exit();
 }
-    
+
 if (isset($_GET['delete']) && $_GET['delete'] != "") {
     $req = $connexion->prepare('DELETE FROM shortener WHERE username= ? AND short = ?');
     $req->execute(array($username, $_GET['delete']));

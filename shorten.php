@@ -125,9 +125,6 @@ echo '
             URL shortened : <br /><a id="newURL" href="' . DEFAULT_URL . '/' . $url_shortened . '">' . DEFAULT_URL . '/' . $url_shortened . '</a>
         </div>
 
-        <div id="credits">
-            Shortener by Azlux
-        </div>
         <script>
             window.prompt("Copy to clipboard: Ctrl+C, Enter","' . DEFAULT_URL . '/' . $url_shortened . '");
         </script>

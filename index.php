@@ -46,10 +46,6 @@ include 'inc/header.php';
 $code_js = 'javascript:(function () {var d = document;var w = window;var enc = encodeURIComponent;var f =\' ' . DEFAULT_URL . '\';var l = d.location;var p = \'/shorten.php?url=\' + enc(l.href) + \'&amp;comment=\' + enc(d.title) + \'&amp;token=' . $token . '\';var u = f + p;var a = function () {if (!w.open(u))l.href = u;};if (/Firefox/.test(navigator.userAgent))setTimeout(a, 0); else a();void(0);})()';
 
 ?>
-    <a class="forkit" href="https://github.com/azlux/Simple-URL-Shortener/">
-        <span>Fork me on GitHub!</span>
-        <span>Get free cookie!</span>
-    </a>
     <script>
         async function checkCustomUrlAvailable(e){
             const {value} = e.target
